@@ -1,0 +1,40 @@
+/* Skills section*/
+.skills {
+  height: 80vh;
+}
+
+.skills__heading {
+  margin-bottom: 2rem;
+}
+
+.skills__list {
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 4rem;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills__item_heading {
+  font-size: 40px;
+  font-family: var(--font-family-poppins);
+  font-weight: 500;
+}
+
+.skills__item_paragraph {
+  font-size: 20px;
+  font-family: var(--font-family-raleway);
+}
+
+.under_line {
+  border-bottom: 3px solid black;
+  padding-bottom: 5px;
+  cursor: pointer;
+}

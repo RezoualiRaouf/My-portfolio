@@ -1,0 +1,121 @@
+/* Bio section*/
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  padding: 2rem 0;
+  height: 85vh;
+}
+
+.bio__heading {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  font-family: var(--font-family-raleway);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-size: 70px;
+  align-self: end;
+  margin-bottom: 20px;
+}
+
+.bio__description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+}
+
+.bio__description_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: fit-content;
+}
+
+.bio__description_text {
+  width: 600px;
+  height: 80px;
+  font-family: var(--font-family-poppins);
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--color-black);
+  margin: 5px;
+}
+
+.bio__description_social_list {
+  display: flex;
+  gap: 17px;
+}
+
+.bio__description_social_link {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+.bio__description_social_link:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.bio__img {
+  object-fit: cover;
+  grid-row: 1/3;
+  justify-self: center;
+  align-self: center;
+}
+
+.bio__cv {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.bio__btn,
+.bio__paragraph {
+  padding: 10px 50px;
+  font-family: var(--font-family-poppins);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.bio__btn {
+  color: var(--color-black);
+  background-color: var(--color-background);
+  display: block;
+  position: relative;
+}
+
+.bio__paragraph {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 5px;
+}
+
+.bio__btn::after {
+  content: "\2b07";
+  font-weight: 900;
+  margin-left: 0.5rem;
+  display: inline-block;
+  position: absolute;
+  animation: bounce 1.7s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}

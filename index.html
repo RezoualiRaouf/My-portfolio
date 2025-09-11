@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>raouf rezouali</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <input id="menu" class="burger-menu-checkbox" type="checkbox" />
+
+        <label for="menu" class="burger-menu">
+          <div class="burger-menu-bar"></div>
+          <div class="burger-menu-bar"></div>
+          <div class="burger-menu-bar"></div>
+        </label>
+
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <a href="#bio" class="header-nav-link nav__bio">bio</a>
+            <a href="#skills" class="header-nav-link nav__skills">skills</a>
+            <a href="#media" class="header-nav-link nav__media">media</a>
+            <a href="#projects" class="header-nav-link nav__projects"
+              >projects</a
+            >
+            <a href="#clients" class="header-nav-link nav__clients"
+              >my clients</a
+            >
+            <a href="#contact" class="header-nav-link nav__contact">contact</a>
+          </ul>
+        </nav>
+        <div class="header-toggle-theme-btn">
+          <h3 class="theme-btn-text">switch theme</h3>
+          <input type="checkbox" id="checkbox-id" class="checkbox-input" />
+          <label for="checkbox-id" class="theme-btn-lable"></label>
+        </div>
+      </div>
+      <section class="section-base bio" id="bio">
+        <h1 class="bio__heading">hi There I'm Raouf Rezouali</h1>
+        <div class="bio__description">
+          <div class="bio__descrepition_container">
+            <h3 class="bio__description_text"></h3>
+          </div>
+          <div class="bio__description_social_list">
+            <a
+              href="https://www.linkedin.com/in/raoufrezouali/"
+              class="bio__description_social_link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://mail.google.com/mail/u/0/?fs=1&to=raouf.rezouali@univ-bouira.dz&tf=cm"
+              class="bio__description_social_link"
+              target="_blank"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://github.com/RezoualiRaouf"
+              class="bio__description_social_link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="bio__cv">
+            <a class="bio__paragraph" href="#contact">say hi!</a>
+            <a class="bio__btn" href="/assets/mohamedAbusreaResume.pdf"
+              >download cv</a
+            >
+          </div>
+        </div>
+        <img
+          class="bio__img"
+          src="images/me_pic-removebg-preview.png"
+          alt="profile-pic"
+        />
+      </section>
+      <section class="section-base section-with-bg skills" id="skills">
+        <h2 class="section__heading bg">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h3 class="skills__item_heading">C</h3>
+            <p class="skills__item_paragraph">3 Years</p>
+          </li>
+          <li class="skills__item">
+            <h3 class="skills__item_heading">Python</h3>
+            <p class="skills__item_paragraph">2 Years</p>
+          </li>
+          <li class="skills__item">
+            <h3 class="skills__item_heading">Wordpress</h3>
+            <p class="skills__item_paragraph">1 Year</p>
+          </li>
+          <li class="skills__item">
+            <h3 class="skills__item_heading">Command Line</h3>
+            <p class="skills__item_paragraph">3 years</p>
+          </li>
+          <li class="skills__item">
+            <h3 class="skills__item_heading">HTML/CSS</h3>
+            <p class="skills__item_paragraph">2 Years</p>
+          </li>
+          <li class="skills__item">
+            <h3 class="skills__item_heading">Git/GitHub</h3>
+            <p class="skills__item_paragraph">3 years</p>
+          </li>
+        </ul>
+      </section>
+      <section class="media section-base" id="media">
+        <h2 class="section__heading">Media</h2>
+
+        <video poster="images/thumbnail.jpg" controls>
+          <source src="./bg-loop-video.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section class="project section-base" id="projects">
+        <h2 class="section__heading skills__heading">My Featured Projects</h2>
+        <ul class="project__list">
+          <li class="project__item">
+            <img
+              src="wp_email_restriction_logo.png"
+              alt="email restriction plugin for wordpress"
+              class="project__item_img"
+              id="project__item_img_plugin"
+            />
+            <div class="project__description">
+              <h3 class="project__item_heading">
+                Email Restriction <br />Plugin
+              </h3>
+              <p class="project__item_description">
+                WP Email Restriction - A WordPress security plugin that
+                restricts site access to users with approved email domains.
+                Perfect for corporate <br />
+                intranets and private communities requiring controlled access.
+                Features easy domain whitelisting and seamless WordPress
+                integration.
+              </p>
+              <a
+                class="project__item_link"
+                href="https://github.com/RezoualiRaouf/wp-email-restrection.git"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </li>
+          <li class="project__item">
+            <div class="project__description">
+              <h3 class="project__item_heading">Library website</h3>
+              <p class="project__item_description">
+                A specialized WordPress website for the University of Bouira's
+                Faculty library. Features a rich digital <br />collection of
+                Arabic and foreign language resources for academic research.
+              </p>
+              <a
+                class="project__item_link"
+                target="_blank"
+                href="https://www.univ-bouira.dz/bibfshs/"
+                >Visit site</a
+              >
+            </div>
+
+            <img
+              src="univ-website.png"
+              alt="email restriction plugin for wordpress"
+              class="project__item_img"
+              id="project__item_img_website"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="clients section-base section-with-bg" id="clients">
+        <h2 class="section__heading">
+          What My <br />
+          Clients Says.
+        </h2>
+
+        <div class="client__opinions">
+          <div class="client__list">
+            <p class="client_list_p">
+              Raouf delivered exactly what we needed for our library website.
+              Professional work and great attention to detail. Highly
+              recommended!
+            </p>
+            <p class="client_list_p">
+              The WordPress plugin works perfectly and solved our security
+              concerns. Clear communication throughout the project. Will
+              definitely work with Raouf again.
+            </p>
+            <p class="client_list_p">
+              Fast, reliable, and skilled developer. Our website runs smoothly
+              and looks great. Excellent experience from start to finish!Raouf
+              delivered exactly what we needed for our library website.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-base" id="contact">
+        <div class="contact">
+          <div class="contact__item">
+            <p class="contact__item_p">
+              Fell free to reach out to me any time. I prefer to talk over
+              email. especially since we maybe a few time zones away.
+            </p>
+            <a
+              href="https://mail.google.com/mail/u/0/?fs=1&to=raouf.rezouali@univ-bouira.dz&tf=cm"
+              target="_blank"
+              class="contact__item_email"
+              >raouf.rezouali@univ-bouira.dz</a
+            >
+            <div class="bio__description_social_list">
+              <a
+                href="https://www.linkedin.com/in/raoufrezouali/"
+                class="bio__description_social_link"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://mail.google.com/mail/u/0/?fs=1&to=raouf.rezouali@univ-bouira.dz&tf=cm"
+                class="bio__description_social_link"
+                target="_blank"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://github.com/RezoualiRaouf"
+                class="bio__description_social_link"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <h2 class="section__heading">
+              Let's Work <br />
+              Together!
+            </h2>
+            <form action="messages.html" class="contact__item_form">
+              <input
+                class="contact__input"
+                type="text"
+                placeholder="* Full name"
+                id="form__name_input"
+                name="fn_text"
+                required
+              />
+              <input
+                class="contact__input"
+                type="tel"
+                placeholder="* Phone No."
+                id="form__ph_input"
+                name="ph_number"
+                required
+              />
+              <textarea
+                class="contact__input"
+                placeholder="* Your Message"
+                name="msg_text"
+                id="form__msg_input"
+                rows="1"
+                required
+              ></textarea>
+              <input type="submit" id="form__submit_btn" value="Send Message" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="scripts/animation.js"></script>
+    <script src="scripts/challenge-1.js"></script>
+    <footer class="footer">&copy; 2025 By Rezouali Raouf</footer>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+/* theme */
+html:has(.checkbox-input:checked) {
+  /* Dark theme colors */
+  --color-black: #fff;
+  --color-white: #1a1a1a;
+  --color-blue: #4a9eff;
+  --color-light-blue: #58a6f0;
+  --color-dark-blue: #6bb6ff;
+  --color-darker-blue: #4a9eff;
+  --color-grey: #2d2d2d;
+  --color-background: #1a1a1a;
+  --color-line: #ffffff;
+  --color-text: #ffffff;
+  --color-box-img: #ffffff;
+  --color-link-bg: #ffffff;
+  --color-input-border: #ffffff;
+  --toggle-bg-checked: var(--color-black);
+  --toggle-knob-checked: var(--color-white);
+}
+
+/* ensures sections follow the current theme variables */
+html:has(.checkbox-input:checked) .section-base,
+html.dark .section-base {
+  color: var(--color-text);
+}
+
+/* apply to body/container as baseline */
+html:has(.checkbox-input:checked),
+html.dark {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* fallback for header stretch area */
+html:has(.checkbox-input:checked) .header::before,
+html.dark .header::before {
+  background-color: var(--color-background);
+}
+
+/* inputs, buttons, and footers */
+html:has(.checkbox-input:checked) input,
+html.dark input,
+html:has(.checkbox-input:checked) textarea,
+html.dark textarea {
+  color: var(--color-text);
+  border-color: var(--color-input-border);
+  background: transparent;
+}
+
+html:has(.checkbox-input:checked) #form__submit_btn,
+html.dark #form__submit_btn {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+/* links, headings and other text that were hard-coded */
+html:has(.checkbox-input:checked) .section__heading,
+html.dark .section__heading,
+html:has(.checkbox-input:checked) p,
+html.dark p,
+html:has(.checkbox-input:checked) h1,
+html.dark h1,
+html:has(.checkbox-input:checked) h2,
+html.dark h2,
+html:has(.checkbox-input:checked) h3,
+html.dark h3,
+html:has(.checkbox-input:checked) .bio__description_text,
+html.dark .bio__description_text {
+  color: var(--color-text);
+}
+
+.theme-btn-lable {
+  background-color: var(--toggle-bg);
+}
+.theme-btn-lable::after {
+  background-color: var(--toggle-knob);
+}
+
+/* checked state: move knob and invert colors for clear visual change */
+.checkbox-input:checked + .theme-btn-lable {
+  background-color: var(--toggle-bg-checked);
+}
+.checkbox-input:checked + .theme-btn-lable::after {
+  background-color: var(--toggle-knob-checked);
+}

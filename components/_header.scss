@@ -1,0 +1,130 @@
+/* header section */
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 3em 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* strech the header's background color to fill the 100vw*/
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-color: var(--color-white);
+  z-index: -2;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 2px;
+  background-color: var(--color-line);
+  z-index: -1;
+}
+
+.burger-menu-checkbox,
+.burger-menu {
+  display: none;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header-nav-link,
+.header-nav-link:link,
+.header-nav-link:visited {
+  font-family: var(--font-family-raleway);
+  font-weight: 500;
+  font-size: var(--font-size-nav);
+}
+
+.container:has(.bio:target) .nav__bio,
+.container:has(.skills:target) .nav__skills,
+.container:has(.media:target) .nav__media,
+.container:has(.project:target) .nav__projects,
+.container:has(.clients:target) .nav__clients,
+.container:has(.contact:target) .nav__contact {
+  color: var(--color-dark-blue);
+}
+
+.header-nav-link.active::after {
+  width: 100%;
+  background-color: var(--color-dark-blue);
+}
+
+.header-nav-link::after {
+  content: "";
+  margin-bottom: -3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  transition: width 0.2s ease;
+  height: 3px;
+  background-color: var(--color-black);
+}
+
+.header-nav-link:hover::after {
+  width: 100%;
+}
+
+.header-toggle-theme-btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  align-items: center;
+}
+
+.theme-btn-text {
+  font-family: var(--font-family-poppins);
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.theme-btn-lable {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 44px;
+  height: 23px;
+  background-color: var(--color-black);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.theme-btn-lable::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  margin-top: 2.2px;
+  margin-left: 2px;
+  transition: 0.2s;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-input:checked + .theme-btn-lable::after {
+  transform: translateX(23px);
+}

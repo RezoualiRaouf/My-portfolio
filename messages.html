@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Submitted Message</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 24px;
+        background: #f8f8f8;
+      }
+      .card {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 18px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      }
+      .meta {
+        color: #555;
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+      }
+      .message {
+        white-space: pre-wrap;
+        background: #f9f9f9;
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #eee;
+      }
+      .empty {
+        color: #666;
+      }
+      a.button {
+        display: inline-block;
+        margin-top: 14px;
+        padding: 8px 12px;
+        background: #111;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Message Submitted</h2>
+
+      <div id="content"></div>
+
+      <a class="button" href="index.html">← Back to Homme</a>
+    </div>
+
+    <script>
+      // Read query string values (sent by the contact form via GET)
+      const params = new URLSearchParams(location.search);
+      const name = params.get("fn_text") || "";
+      const phone = params.get("ph_number") || "";
+      const message = params.get("msg_text") || "";
+
+      // Simple HTML escape to prevent injection
+      function escapeHtml(str) {
+        return String(str)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      const container = document.getElementById("content");
+
+      if (!name && !phone && !message) {
+        container.innerHTML =
+          '<p class="empty">No data submitted. Please fill the form first.</p>';
+      } else {
+        container.innerHTML = `
+        <div class="meta"><strong>Name:</strong> ${escapeHtml(name)}</div>
+        <div class="meta"><strong>Phone:</strong> ${escapeHtml(phone)}</div>
+        <div style="margin-top:8px;"><strong>Message:</strong>
+          <div class="message">${escapeHtml(message)}</div>
+        </div>
+      `;
+      }
+    </script>
+  </body>
+</html>

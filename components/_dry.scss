@@ -1,0 +1,35 @@
+/*---------------------*/
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+  padding: 0 var(--gutter);
+}
+
+/* DRY section*/
+.section-base {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  padding: 2.55rem 0;
+}
+
+.section-with-bg::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-grey);
+  z-index: -1;
+  width: 100vw;
+  height: var(--section-height);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section__heading {
+  font-size: 65px;
+  font-family: var(--font-family-raleway);
+  font-weight: 600;
+  margin-bottom: 5rem;
+  align-self: flex-start;
+}
