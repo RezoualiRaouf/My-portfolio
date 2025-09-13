@@ -7,4 +7,5 @@
 # change them change them colors
 
 # add sliders / animations
-```
+
+# add  loop to link all js files
