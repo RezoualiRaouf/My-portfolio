@@ -53,21 +53,7 @@
   font-size: var(--font-size-nav);
 }
 
-.container:has(.bio:target) .nav__bio,
-.container:has(.skills:target) .nav__skills,
-.container:has(.media:target) .nav__media,
-.container:has(.project:target) .nav__projects,
-.container:has(.clients:target) .nav__clients,
-.container:has(.contact:target) .nav__contact {
-  color: var(--color-dark-blue);
-}
-
-.header-nav-link.active::after {
-  width: 100%;
-  background-color: var(--color-dark-blue);
-}
-
-.header-nav-link::after {
+.nav-underline::after {
   content: "";
   margin-bottom: -3px;
   position: absolute;
@@ -76,11 +62,19 @@
   width: 0%;
   transition: width 0.2s ease;
   height: 3px;
-  background-color: var(--color-black);
+  background-color: var(--color-blue);
+}
+
+.header-nav-link {
+  position: relative;
 }
 
 .header-nav-link:hover::after {
   width: 100%;
+}
+
+.header-nav-link:active {
+  color: var(--color-blue);
 }
 
 .header-toggle-theme-btn {

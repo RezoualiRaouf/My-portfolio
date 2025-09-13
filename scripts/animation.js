@@ -1,3 +1,7 @@
+/**
+ *  typing animation
+ */
+
 const typingTexts = [
   "A passionate computer science graduate",
   "Who is actively seeking internship opportunities!",
@@ -59,8 +63,52 @@ function typeText() {
   setTimeout(typeText, speed);
 }
 
-// Start the animation when DOM is loaded
+/**
+ * navigation link highlighting
+ */
+
+function activeNavLink() {
+  // get sections and navigation links
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".header-nav-link");
+
+  // watche elements and tell us when they enter/leave the viewport
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const sectionId = entry.target.getAttribute("id");
+
+        if (entry.isIntersecting) {
+          // This section is now visible
+          updateActiveNavLink(sectionId);
+        }
+      });
+    },
+    {
+      threshold: 0.3, // Trigger when 30% of section is visible
+      rootMargin: "-50px 0px -50px 0px", // Adjust the trigger zone
+    }
+  );
+
+  //  update active nav link style
+  function updateActiveNavLink(activeSectionId) {
+    navLinks.forEach((link) => {
+      // Remove underline from ALL links first
+      link.classList.remove("nav-underline");
+
+      // Add underline ONLY to the link matching current section
+      if (link.classList.contains(`nav__${activeSectionId}`)) {
+        link.classList.add("nav-underline");
+      }
+    });
+  }
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+}
+
+// wait until DOM loads
 document.addEventListener("DOMContentLoaded", function () {
-  // Wait 0.5 second before starting the animation
   setTimeout(typeText, 500);
+  activeNavLink();
 });
