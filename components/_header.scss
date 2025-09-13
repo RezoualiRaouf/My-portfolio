@@ -51,29 +51,35 @@
   font-family: var(--font-family-raleway);
   font-weight: 500;
   font-size: var(--font-size-nav);
-}
-
-.nav-underline::after {
-  content: "";
-  margin-bottom: -3px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  transition: width 0.2s ease;
-  height: 3px;
-  background-color: var(--color-blue);
-}
-
-.header-nav-link {
   position: relative;
 }
 
+/* Default underline for hover effect */
+.header-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: var(--color-blue);
+  transition: width 0.3s ease;
+}
+
+/* Hover effect - shows underline on hover */
 .header-nav-link:hover::after {
   width: 100%;
 }
 
-.header-nav-link:active {
+/* Active section underline - shows underline when section is visible */
+.nav-underline::after {
+  width: 100%;
+  background-color: var(--color-blue);
+}
+
+/* Active link color */
+.header-nav-link:active,
+.nav-underline {
   color: var(--color-blue);
 }
 
