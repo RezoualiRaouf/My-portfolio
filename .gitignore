@@ -1,15 +1,18 @@
+# Node
 node_modules/
 npm-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-package-lock.json?       # remove ? if you DO NOT want to commit lockfile (normally keep it)
+
 # Environment
 .env
 .env.*.local
+
 # Build outputs
 dist/
 build/
 out/
+
 # Editor / OS
 .DS_Store
 Thumbs.db
@@ -17,18 +20,20 @@ Thumbs.db
 .idea/
 *.swp
 *~
+
 # Caches, coverage, logs
 .cache/
 coverage/
 .parcel-cache/
 .nyc_output/
+*.log
+
 # ESLint cache
 .eslintcache
+
 # Keys and certs
 *.pem
 *.key
 *.p12
 *.cer
-# Misc
-*.log
-EOF
+
