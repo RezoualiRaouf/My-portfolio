@@ -1,11 +1,16 @@
-### Things To add to this project:
+# 📌 Project To-Do List
 
-# change dark light them using js using
+## 🎨 UI / Design
+- [X] Change dark / light theme using JavaScript  
+- [ ] Create a template on Figma  
+- [ ] Adjust theme colors  
+- [ ] Add sliders / animations  
+- [ ] ajust theme color for project section 
+- [ ] better styling for the skills section
 
-# make a template on Figma
+## ⚙️ Development
+- [ ] Add loop to link all JS files  
 
-# change them change them colors
+---
 
-# add sliders / animations
-
-# add  loop to link all js files
+ Use `[ ]` for pending tasks and `[x]` for completed ones.  
