@@ -16,6 +16,9 @@ html:has(.checkbox-input:checked) {
   --color-input-border: #ffffff;
   --toggle-bg-checked: var(--color-black);
   --toggle-knob-checked: var(--color-white);
+  --bg-color-gradient-1: rgba(26, 26, 26, 0.72);
+  --bg-color-gradient-2: rgba(21, 109, 209, 0.06);
+  --bg-border: rgba(74, 158, 255, 0.22);
 }
 
 /* ensures sections follow the current theme variables */
