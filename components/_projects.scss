@@ -14,7 +14,6 @@
 .project__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 500px;
   gap: 3rem;
   align-items: center;
   padding: 2.5rem;
@@ -197,12 +196,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  height: 70vh;
 }
 
 /* Responsive adjustments */
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 800px) {
   .project__item {
     height: 500px;
   }
