@@ -17,7 +17,7 @@
 .section-with-bg::after {
   content: "";
   position: absolute;
-  background-color: var(--color-blue-50);
+  background-color: var(--color-section-bg);
   z-index: -1;
   width: 100vw;
   height: inherit; //inherits the height from it's parent (section-base)

@@ -18,6 +18,7 @@ html:has(.checkbox-input:checked) {
   --color-text-secondary: var(--color-grey-300);
   --color-text-muted: var(--color-grey-400);
 
+  --color-section-bg: var(--color-grey-800);
   --color-section-heading: #ffffff;
   --color-grey: #2d2d2d;
   --color-text: #ffffff;
@@ -27,6 +28,8 @@ html:has(.checkbox-input:checked) {
   --bg-color-gradient-1: rgba(26, 26, 26, 0.72);
   --bg-color-gradient-2: rgba(21, 109, 209, 0.06);
   --bg-border: rgba(74, 158, 255, 0.22);
+  --color-social-icon: #ffffff;
+  --color-social-icon-hover: var(--color-grey-600);
 
   /* Toggle colors for dark theme */
   --toggle-bg: var(--color-grey-600);
