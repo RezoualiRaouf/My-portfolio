@@ -94,7 +94,7 @@
 
 .bio__btn {
   color: var(--color-white);
-  background-color: var(--color-blue-600);
+  background-color: var(--color-btn);
   display: block;
   position: relative;
   border-radius: 3px;
@@ -104,7 +104,7 @@
 .bio__btn:hover {
   transform: scale(1.05);
   transition: ease 0.3s;
-  background-color: var(--color-blue-800);
+  background-color: var(--color-btn);
 }
 
 .bio__paragraph {

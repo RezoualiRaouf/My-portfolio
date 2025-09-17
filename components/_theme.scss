@@ -17,7 +17,9 @@ html:has(.checkbox-input:checked) {
   --color-text-primary: var(--color-grey-100);
   --color-text-secondary: var(--color-grey-300);
   --color-text-muted: var(--color-grey-400);
-
+  --color-btn: #fff;
+  /* Component Specific Colors */
+  --color-email-link: #fff;
   --color-section-bg: var(--color-grey-800);
   --color-section-heading: #ffffff;
   --color-grey: #2d2d2d;
@@ -62,7 +64,7 @@ html:has(.checkbox-input:checked) input,
 html.dark input,
 html:has(.checkbox-input:checked) textarea,
 html.dark textarea {
-  color: var(--color-text);
+  color: #fff;
   border-color: var(--color-input-border);
   background: transparent;
 }
