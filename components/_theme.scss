@@ -3,22 +3,35 @@ html:has(.checkbox-input:checked) {
   /* Dark theme colors */
   --color-black: #fff;
   --color-white: #1a1a1a;
-  --color-blue: #4a9eff;
-  --color-light-blue: #58a6f0;
-  --color-dark-blue: #6bb6ff;
-  --color-darker-blue: #4a9eff;
+
+  --color-blue: #60a5fa;
+  --color-light-blue: #93c5fd;
+  --color-dark-blue: #3b82f6;
+  --color-darker-blue: #60a5fa;
+
+  --color-background: var(--color-grey-900);
+  --color-surface: var(--color-grey-800);
+  --color-surface-elevated: var(--color-grey-700);
+  --color-line: var(--color-grey-700);
+  --color-border: var(--color-grey-600);
+  --color-text-primary: var(--color-grey-100);
+  --color-text-secondary: var(--color-grey-300);
+  --color-text-muted: var(--color-grey-400);
+
   --color-grey: #2d2d2d;
-  --color-background: #1a1a1a;
-  --color-line: #ffffff;
   --color-text: #ffffff;
   --color-box-img: #ffffff;
   --color-link-bg: #ffffff;
   --color-input-border: #ffffff;
-  --toggle-bg-checked: var(--color-black);
-  --toggle-knob-checked: var(--color-white);
   --bg-color-gradient-1: rgba(26, 26, 26, 0.72);
   --bg-color-gradient-2: rgba(21, 109, 209, 0.06);
   --bg-border: rgba(74, 158, 255, 0.22);
+
+  /* Toggle colors for dark theme */
+  --toggle-bg: var(--color-grey-600);
+  --toggle-knob: var(--color-grey-300);
+  --toggle-bg-checked: var(--color-blue-600);
+  --toggle-knob-checked: var(--color-white);
 }
 
 /* ensures sections follow the current theme variables */

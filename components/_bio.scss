@@ -46,7 +46,7 @@
   font-family: var(--font-family-poppins);
   font-weight: 600;
   font-size: 30px;
-  color: var(--color-black);
+  color: var(--color-text-primary);
   margin: 5px;
 }
 
@@ -60,10 +60,13 @@
   height: 45px;
   border-radius: 10px;
   font-size: 40px;
+  color: var(--color-social-icon);
+  transition: all ease 0.3s;
 }
 
 .bio__description_social_link:hover {
   transform: scale(1.2);
+  color: var(--color-social-icon-hover);
   transition: 0.2s;
 }
 
@@ -89,16 +92,28 @@
 }
 
 .bio__btn {
-  color: var(--color-black);
-  background-color: var(--color-background);
+  color: var(--color-white);
+  background-color: var(--color-blue-600);
   display: block;
   position: relative;
+  border-radius: 3px;
+  transition: ease 0.3s;
+}
+
+.bio__btn:hover {
+  transform: scale(1.05);
+  transition: ease 0.3s;
+  background-color: var(--color-blue-800);
 }
 
 .bio__paragraph {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border-radius: 5px;
+  color: var(--color-text-primary);
+  border-radius: 3px solid var(--bg-border);
+}
+
+.bio__paragraph:hover {
+  transform: scale(1.1);
+  transition: ease 0.3s;
 }
 
 .bio__btn::after {

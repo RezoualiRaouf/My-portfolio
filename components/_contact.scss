@@ -49,6 +49,12 @@
   font-family: var(--font-family-poppins);
 }
 
+.contact__input:focus {
+  border-color: var(--color-blue);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
 #form__msg_input {
   grid-column: 1/-1;
 }
@@ -57,10 +63,17 @@
   grid-column: 1;
   grid-row: 3;
   font-size: 24px;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-black);
   padding: 1.7rem 0;
   border-radius: 15px;
   font-family: var(--font-family-poppins);
   font-weight: 500;
+  transition: all ease 0.5s;
+}
+
+#form__submit_btn:hover {
+  transition: all ease 0.5s;
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-blue);
 }

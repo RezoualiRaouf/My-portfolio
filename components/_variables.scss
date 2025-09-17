@@ -2,32 +2,72 @@
 :root {
   --container-width: 119rem;
   --gutter: 2rem;
+  /* :default colors*/
   --color-black: #000;
   --color-white: #fff;
-  --color-blue: #2374e1;
-  --color-light-blue: #1d9bf0;
-  --color-dark-blue: #0a66c2;
-  --color-darker-blue: #143ce8;
-  --color-red: #ff0000;
-  --color-green: #03a696;
-  --color-dark-green: #42959b;
-  --color-grey: #f6f6f6;
+  /* Primary Blue Palette */
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+  --color-blue-900: #1e3a8a;
+  --color-blue: #2563eb;
+  --color-light-blue: #60a5fa;
+  --color-dark-blue: #1d4ed8;
+  --color-darker-blue: #1e40af;
+  --bg-color-gradient-1: rgba(255, 255, 255, 0.78);
+  --bg-color-gradient-2: rgba(21, 109, 209, 0.08);
+  --bg-border: rgba(21, 109, 209, 0.14);
+
+  /* Neutral Colors */
+  --color-grey-50: #f9fafb;
+  --color-grey-100: #f3f4f6;
+  --color-grey-200: #e5e7eb;
+  --color-grey-300: #d1d5db;
+  --color-grey-400: #9ca3af;
+  --color-grey-500: #6b7280;
+  --color-grey-600: #4b5563;
+  --color-grey-700: #374151;
+  --color-grey-800: #1f2937;
+  --color-grey-900: #111827;
+
+  /* Semantic Colors for Light Theme */
   --color-background: var(--color-white);
-  --color-line: var(--color-black);
+  --color-surface: var(--color-grey-50);
+  --color-surface-elevated: var(--color-white);
+  --color-line: var(--color-grey-200);
+  --color-border: var(--color-grey-300);
+  --color-text-primary: var(--color-grey-900);
+  --color-text-secondary: var(--color-grey-600);
+  --color-text-muted: var(--color-grey-500);
+
+  /* Component Specific Colors */
+  --color-nav-active: var(--color-blue-600);
+  --color-social-icon: var(--color-blue-600);
+  --color-social-icon-hover: var(--color-blue-700);
+  --color-project-accent: var(--color-blue-600);
+  --color-skill-highlight: var(--color-blue-100);
+  --color-client-bg: var(--color-grey-50);
   --color-text: var(--color-black);
   --color-box-img: var(--color-black);
   --color-link-bg: var(--color-black);
   --color-input-border: var(--color-black);
-  --bg-color-gradient-1: rgba(255, 255, 255, 0.78);
-  --bg-color-gradient-2: rgba(21, 109, 209, 0.08);
-  --bg-border: rgba(21, 109, 209, 0.14);
   --font-family-raleway: "Raleway", sans-serif;
   --font-family-poppins: "poppins", sans-serif;
   --font-weight-bold: 700;
   --font-size-65: 65px;
-  --toggle-bg: var(--color-black);
-  --toggle-knob: var(--color-white);
   --scroll-margin-top: 110px;
   --section-height: 80vh;
   --font-size-nav: 19px;
+
+  /* Toggle Colors */
+  --toggle-bg: var(--color-grey-300);
+  --toggle-knob: var(--color-white);
+  --toggle-bg-checked: var(--color-blue-600);
+  --toggle-knob-checked: var(--color-white);
 }

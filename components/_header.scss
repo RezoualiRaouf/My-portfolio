@@ -45,7 +45,7 @@
   gap: 30px;
 }
 
-.header-nav-link,
+header-nav-link,
 .header-nav-link:link,
 .header-nav-link:visited {
   font-family: var(--font-family-raleway);
@@ -74,7 +74,7 @@
 /* Active section underline - shows underline when section is visible */
 .nav-underline::after {
   width: 100%;
-  background-color: var(--color-blue);
+  background-color: var(--color-blue-400);
 }
 
 /* Active link color */

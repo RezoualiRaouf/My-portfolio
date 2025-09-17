@@ -17,24 +17,20 @@
 }
 
 .skills__item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  cursor: pointer;
+  padding: 1.5rem;
+  color: var(--color-blue-900);
+  transition: all 0.3s ease;
 }
 
 .skills__item_heading {
   font-size: 40px;
   font-family: var(--font-family-poppins);
   font-weight: 500;
+  color: var(--color-project-accent);
 }
 
 .skills__item_paragraph {
   font-size: 20px;
   font-family: var(--font-family-raleway);
-}
-
-.under_line {
-  border-bottom: 3px solid black;
-  padding-bottom: 5px;
-  cursor: pointer;
 }
