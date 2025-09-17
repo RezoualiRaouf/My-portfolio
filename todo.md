@@ -3,11 +3,11 @@
 ## 🎨 UI / Design
 - [X] Change dark / light theme using JavaScript  
 - [ ] Create a template on Figma  
-- [ ] Adjust theme colors  
+- [X] Adjust theme colors  
 - [ ] Add sliders / animations  
 - [X] adjust theme color for project section 
 - [ ] better styling for the skills section
-
+- [ ] adjust scrolling on mobile
 ## ⚙️ Development
 - [ ] Add loop to link all JS files  
 
