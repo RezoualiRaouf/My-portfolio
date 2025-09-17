@@ -286,3 +286,13 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 450px) {
+  .contact__item_form {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #form__submit_btn {
+    grid-row: 4;
+  }
+}
