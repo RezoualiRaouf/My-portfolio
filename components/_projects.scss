@@ -1,14 +1,11 @@
-/* Enhanced Project Section Styles */
-
 #projects {
   height: auto;
-  overflow: hidden; /* For animation effects */
 }
 
 .project__list {
   display: flex;
   flex-direction: column;
-  gap: 4rem; /* Increased gap for better separation */
+  gap: 4rem;
 }
 
 .project__item {
@@ -196,37 +193,4 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-}
-
-/* Responsive adjustments */
-
-@media (max-width: 1200px) and (min-width: 800px) {
-  .project__item {
-    height: 500px;
-  }
-}
-@media (max-width: 800px) {
-  .project__item {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem;
-  }
-
-  .project__item_img {
-    height: 250px;
-    justify-self: center;
-  }
-
-  .project__item_heading {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .project__item_description {
-    text-align: center;
-  }
-
-  .project__item_link {
-    align-self: center;
-  }
 }

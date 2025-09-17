@@ -8,7 +8,7 @@
 /* DRY section*/
 .section-base {
   position: relative;
-  height: 80vh;
+  height: auto;
   width: 100%;
   margin: 0;
   padding: 2.55rem 0;
@@ -17,12 +17,14 @@
 .section-with-bg::after {
   content: "";
   position: absolute;
-  background-color: var(--color-grey);
+  background-color: var(--color-blue-50);
   z-index: -1;
   width: 100vw;
-  height: var(--section-height);
+  height: inherit; //inherits the height from it's parent (section-base)
   top: 0;
   left: 50%;
+  bottom: 0;
+
   transform: translateX(-50%);
 }
 
@@ -32,4 +34,5 @@
   font-weight: 600;
   margin-bottom: 5rem;
   align-self: flex-start;
+  color: var(--color-section-heading);
 }

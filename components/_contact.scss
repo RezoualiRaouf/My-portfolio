@@ -1,7 +1,7 @@
 /* contact section */
 
 .contact {
-  height: 80vh;
+  height: auto;
 }
 
 .contact {
@@ -62,11 +62,12 @@
 #form__submit_btn {
   grid-column: 1;
   grid-row: 3;
-  font-size: 24px;
+  font-size: 20px;
   background-color: var(--color-white);
-  color: var(--color-black);
-  padding: 1.7rem 0;
-  border-radius: 15px;
+  color: var(--color-blue-700);
+  padding: 1rem 0;
+
+  border-bottom: solid var(--color-blue-100);
   font-family: var(--font-family-poppins);
   font-weight: 500;
   transition: all ease 0.5s;
@@ -75,5 +76,5 @@
 #form__submit_btn:hover {
   transition: all ease 0.5s;
   transform: translateY(-6px);
-  box-shadow: var(--shadow-blue);
+  box-shadow: 0 8px 20px rgba(67, 56, 202, 0.3);
 }

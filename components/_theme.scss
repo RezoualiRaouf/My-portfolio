@@ -18,6 +18,7 @@ html:has(.checkbox-input:checked) {
   --color-text-secondary: var(--color-grey-300);
   --color-text-muted: var(--color-grey-400);
 
+  --color-section-heading: #ffffff;
   --color-grey: #2d2d2d;
   --color-text: #ffffff;
   --color-box-img: #ffffff;
@@ -70,14 +71,10 @@ html.dark #form__submit_btn {
 }
 
 /* links, headings and other text that were hard-coded */
-html:has(.checkbox-input:checked) .section__heading,
-html.dark .section__heading,
 html:has(.checkbox-input:checked) p,
 html.dark p,
 html:has(.checkbox-input:checked) h1,
 html.dark h1,
-html:has(.checkbox-input:checked) h2,
-html.dark h2,
 html:has(.checkbox-input:checked) h3,
 html.dark h3,
 html:has(.checkbox-input:checked) .bio__description_text,

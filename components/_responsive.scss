@@ -1,6 +1,10 @@
 /* Responsive section */
 
 @media (min-width: 800px) and (max-width: 1200px) {
+  :root {
+    --scroll-margin-top: 70px;
+  }
+
   html {
     font-size: 8px;
   }
@@ -15,6 +19,53 @@
   .contact__input {
     font-size: 12px;
   }
+  .bio {
+    padding: 160px 0;
+  }
+
+  .project {
+    padding: 160px 0;
+  }
+
+  .project__item {
+    grid-template-columns: 1fr;
+  }
+
+  .project__item_img {
+    height: 200px;
+    justify-self: center;
+  }
+
+  .project__item_heading {
+    font-size: 22px;
+    align-self: center;
+  }
+
+  .project__item_description {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .project__item_link {
+    font-size: 14px;
+    align-self: center;
+  }
+
+  #plugin-project .project__item_img {
+    grid-row: 3;
+  }
+
+  #plugin-project .project__item_link {
+    margin-top: 7px;
+  }
+
+  .skills {
+    padding: 160px 0;
+  }
+
+  .contact {
+    padding: 120px 0;
+  }
 }
 
 @media (max-width: 800px) {
@@ -26,7 +77,7 @@
 
   .section-base {
     padding: 1.5rem 0;
-    height: 90vh;
+    height: auto;
   }
 
   .container {
@@ -50,7 +101,8 @@
     grid-template-rows: auto auto auto;
     text-align: center;
     gap: 2rem;
-    height: fit-content;
+    height: auto;
+    padding-bottom: 60px;
   }
 
   .bio__img {
@@ -121,6 +173,30 @@
     align-self: center;
   }
 
+  .project__item {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .project__item_img {
+    height: 250px;
+    justify-self: center;
+  }
+
+  .project__item_heading {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .project__item_description {
+    text-align: center;
+  }
+
+  .project__item_link {
+    align-self: center;
+  }
+
   .contact {
     flex-direction: column;
     flex-flow: column-reverse;
@@ -138,6 +214,10 @@
     font-size: 15px;
     justify-self: start; /* for the btn to not stresh */
     padding: 0.7rem 0.7rem;
+  }
+
+  .footer {
+    font-size: 17px;
   }
 }
 @media (max-width: 650px) {
