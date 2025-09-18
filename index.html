@@ -162,8 +162,8 @@
         <div class="contact">
           <div class="contact__item">
             <p class="contact__item_p">
-              Fell free to reach out to me any time. I prefer to talk over
-              email. especially since we maybe a few time zones away.
+              Feel free to reach out to me any time. I prefer to talk over
+              email, especially since we may be a few time zones away.
             </p>
             <a
               href="https://mail.google.com/mail/u/0/?fs=1&to=raouf.rezouali@univ-bouira.dz&tf=cm"
@@ -200,13 +200,37 @@
               Let's Work <br />
               Together!
             </h2>
-            <form action="messages.html" class="contact__item_form">
+            <form
+              action="https://formsubmit.co/el/yegadu"
+              method="POST"
+              class="contact__item_form"
+              id="contactForm"
+            >
+              <!-- FormSubmit Configuration -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Contact Form Submission from Portfolio"
+              />
+              <input type="hidden" name="_captcha" value="true" />
+              <input type="hidden" name="_template" value="table" />
+
+              <!-- Honeypot field for spam protection -->
+              <input
+                type="text"
+                name="_honey"
+                class="hidden-field"
+                tabindex="-1"
+                autocomplete="off"
+              />
+
+              <!-- Form fields -->
               <input
                 class="contact__input"
                 type="text"
                 placeholder="* Full name"
                 id="form__name_input"
-                name="fn_text"
+                name="name"
                 required
               />
               <input
@@ -214,13 +238,13 @@
                 type="email"
                 placeholder="* Email"
                 id="form__ph_input"
-                name="user_email"
+                name="email"
                 required
               />
               <textarea
                 class="contact__input"
                 placeholder="* Your Message"
-                name="msg_text"
+                name="message"
                 id="form__msg_input"
                 rows="1"
                 required
@@ -230,10 +254,23 @@
           </div>
         </div>
       </section>
+
+      <div class="popup-overlay" id="thankYouPopup">
+        <div class="popup-content">
+          <div class="success-icon"></div>
+          <h2>Thank You!</h2>
+          <p>
+            Your message has been sent successfully. I'll get back to you as
+            soon as possible!
+          </p>
+          <button class="popup-close-btn" onclick="closePopup()">Close</button>
+        </div>
+      </div>
       <div class="back_to_top"></div>
     </div>
     <script src="scripts/animation.js"></script>
     <script src="scripts/index.js"></script>
+    <script src="scripts/contactForm.js"></script>
     <footer class="footer">&copy; 2025 By Rezouali Raouf</footer>
   </body>
 </html>
