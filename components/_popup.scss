@@ -1,0 +1,122 @@
+/* Thank you popup styles */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in;
+
+  &.show {
+    display: flex;
+  }
+}
+
+.popup-content {
+  background: var(--color-white);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.4s ease-out;
+
+  h2 {
+    color: var(--color-blue);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-family: var(--font-family-poppins);
+  }
+
+  p {
+    color: var(--color-blue-800);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-family: var(--font-family-raleway);
+  }
+}
+
+.popup-close-btn {
+  background: var(--color-btn);
+  color: var(--color-white);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: var(--font-family-poppins);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--color-btn-hover, var(--color-btn));
+    transform: translateY(-2px);
+  }
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  background: #10b981;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+
+  &::after {
+    content: "✓";
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Hide honeypot field
+.hidden-field {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+// Loading state for form
+.contact__item_form.loading #form__submit_btn {
+  background: #6b7280;
+  cursor: not-allowed;
+
+  &::after {
+    content: " ⏳";
+  }
+}
