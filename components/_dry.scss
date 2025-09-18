@@ -59,3 +59,8 @@
   transform: scale3d(1.1, 1.1, 1.1);
   transition: all ease 0.3s;
 }
+
+.back_to_top::before {
+  content: "\2191";
+  font-size: 20px;
+}
