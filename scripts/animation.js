@@ -107,8 +107,33 @@ function activeNavLink() {
   });
 }
 
+/**
+ * Back to top animation
+ *
+ */
+
+function backToTop() {
+  const topBtn = document.querySelector(".back_to_top");
+
+  if (topBtn) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        topBtn.classList.add("show");
+      } else {
+        topBtn.classList.remove("show");
+      }
+    });
+
+    topBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  } else {
+    console.error("back to top button does not exist!");
+  }
+}
 // wait until DOM loads
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(typeText, 500);
   activeNavLink();
+  backToTop();
 });

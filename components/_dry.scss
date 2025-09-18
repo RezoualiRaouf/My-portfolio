@@ -36,3 +36,26 @@
   align-self: flex-start;
   color: var(--color-section-heading);
 }
+
+.back_to_top {
+  position: fixed;
+  color: var(--color-white);
+  background-color: var(--color-btn);
+  padding: 15px 20px;
+  border-radius: 3px;
+  bottom: 60px;
+  right: 20px;
+  transition: all ease 0.3s;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none; /* prevents clicking when the btn is hidden */
+}
+
+.back_to_top.show {
+  opacity: 1;
+  pointer-events: auto; /* enable clicks when visible */
+}
+.back_to_top:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+  transition: all ease 0.3s;
+}
