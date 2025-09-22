@@ -8,6 +8,7 @@
 - [X] adjust theme color for project section 
 - [ ] better styling for the skills section
 - [ ] adjust scrolling on mobile
+- [ ] use emailJS for from msg.
 ## ⚙️ Development
 - [ ] Add loop to link all JS files  
 
