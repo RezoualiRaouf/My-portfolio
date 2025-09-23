@@ -2,7 +2,7 @@
 if (typeof emailjs === "undefined") {
   const script = document.createElement("script");
   script.src =
-    "https://cdnjs.cloudflare.com/ajax/libs/emailjs-com/3.2.0/email.min.js";
+    "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
   script.onload = function () {
     console.log("EmailJS loaded dynamically");
     initEmailJS(); // Call your init function here
