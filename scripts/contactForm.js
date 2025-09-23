@@ -1,3 +1,15 @@
+// Load EmailJS dynamically
+if (typeof emailjs === "undefined") {
+  const script = document.createElement("script");
+  script.src =
+    "https://cdnjs.cloudflare.com/ajax/libs/emailjs-com/3.2.0/email.min.js";
+  script.onload = function () {
+    console.log("EmailJS loaded dynamically");
+    initEmailJS(); // Call your init function here
+  };
+  document.head.appendChild(script);
+}
+
 // Wait for page to load completely
 window.addEventListener("load", function () {
   // Check if emailjs is available
