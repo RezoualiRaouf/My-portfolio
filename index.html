@@ -195,11 +195,65 @@
               </a>
             </div>
           </div>
+
           <div class="contact__item">
-            <h2 class="section__heading">
-              Let's Work <br />
-              Together!
-            </h2>
+            <!-- Add this right after your contact heading -->
+            <div class="inner__container">
+              <h2 class="section__heading">
+                Let's Work <br />
+                Together!
+              </h2>
+              <div class="tooltip-container">
+                <button class="tooltip-trigger" type="button">
+                  <svg class="tooltip-icon" viewBox="0 0 24 24">
+                    <path
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="tooltip-content">
+                  <div class="tooltip-inner">
+                    <div class="tooltip-header">
+                      <div class="tooltip-icon-container">
+                        <svg
+                          class="tooltip-info-icon"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                      <h3 class="tooltip-title">Form submission</h3>
+                    </div>
+                    <div class="tooltip-body">
+                      <p class="tooltip-description">
+                        You have 2/2 submissions left
+                      </p>
+                    </div>
+                    <div class="tooltip-footer">
+                      <svg
+                        class="tooltip-check-icon"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span class="tooltip-footer-text">restarts in 24h</span>
+                    </div>
+                    <div class="tooltip-arrow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <form id="contactForm" class="contact__item_form">
               <input
                 class="contact__input"
