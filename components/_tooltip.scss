@@ -4,7 +4,6 @@
   position: relative;
   display: inline-block;
   margin-left: 1rem;
-
   justify-self: center;
 }
 
@@ -213,24 +212,4 @@ html:has(.checkbox-input:checked) .tooltip-arrow {
     rgba(31, 41, 55, 0.95)
   );
   border-color: var(--color-grey-600);
-}
-
-/* Responsive adjustments */
-@media (max-width: 800px) {
-  .tooltip-container {
-    margin-left: 0.5rem;
-  }
-
-  .tooltip-trigger {
-    padding: 0.5rem 1rem;
-    font-size: 0.75rem;
-  }
-
-  .tooltip-content {
-    width: 16rem;
-  }
-
-  .tooltip-inner {
-    padding: 0.75rem;
-  }
 }
