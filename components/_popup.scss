@@ -79,6 +79,24 @@
   font-weight: bold;
 }
 
+.error-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--color-btn);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.error-icon::after {
+  content: "✗";
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 /* Animations */
 @keyframes fadeIn {
   from {
