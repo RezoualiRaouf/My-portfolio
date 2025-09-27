@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
         .then(function (response) {
           if (response.status === 200) {
             recordSubmission(); // Record successful submission (and set lock if needed)
-            updateSubmissionCounter(); // This will start the countdown timer if locked
+            updateSubmissionCounter(); // start the countdown timer if locked
             showPopup("thankYouPopup");
             document.getElementById("contactForm").reset();
           } else {
@@ -57,7 +57,6 @@ window.addEventListener("load", function () {
   });
 });
 
-// ---------- Storage helpers ----------
 const LOCK_KEY = "submissionLock"; // stores timestamp (ms) when the lock ends
 const DAILY_KEY = "dailySubmissions"; // stores object mapping dateString -> count
 const MAX_PER_DAY = 2;
@@ -79,7 +78,6 @@ function clearLock() {
   localStorage.removeItem(LOCK_KEY);
 }
 
-// ---------- Daily submission functions (enhanced) ----------
 function canSubmitToday() {
   const now = Date.now();
   const lock = getLockResetTime();
@@ -117,7 +115,6 @@ function recordSubmission() {
   localStorage.setItem(DAILY_KEY, JSON.stringify(submissions));
 }
 
-// ---------- Tooltip update & scheduler ----------
 let tooltipTimerId = null;
 
 function updateSubmissionCounter() {
