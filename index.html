@@ -197,7 +197,6 @@
           </div>
 
           <div class="contact__item">
-            <!-- Add this right after your contact heading -->
             <div class="inner__container">
               <h2 class="section__heading">
                 Let's Work <br />
@@ -296,14 +295,24 @@
           <button class="popup-close-btn" onclick="closePopup()">Close</button>
         </div>
       </div>
+
       <div class="popup-overlay" id="submitLimitPopup">
         <div class="popup-content">
-          <div class="success-icon"></div>
+          <div class="error-icon"></div>
           <h2>Submition Failed!</h2>
           <p>
             You have exseded the allowed limit to submit this form resubmition
             is after 24h
           </p>
+          <button class="popup-close-btn" onclick="closePopup()">Close</button>
+        </div>
+      </div>
+
+      <div class="popup-overlay" id="errorPopup">
+        <div class="popup-content">
+          <div class="error-icon"></div>
+          <h2>Error accrued!</h2>
+          <p>Failed to send message. Please try again.</p>
           <button class="popup-close-btn" onclick="closePopup()">Close</button>
         </div>
       </div>
