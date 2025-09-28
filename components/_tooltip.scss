@@ -213,3 +213,153 @@ html:has(.checkbox-input:checked) .tooltip-arrow {
   );
   border-color: var(--color-grey-600);
 }
+
+/* Responsive styles within the same file */
+
+@media (max-width: 1300px) {
+  .inner__container {
+    flex-direction: column-reverse;
+  }
+
+  .tooltip-container {
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-left: 0;
+  }
+
+  .tooltip-trigger {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .tooltip-trigger:hover {
+    background-color: var(--color-darker-blue);
+    transform: scale(1.05);
+  }
+
+  .tooltip-content {
+    width: 18rem;
+  }
+
+  .tooltip-inner {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .inner__container {
+    flex-direction: row;
+  }
+
+  .tooltip-container {
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+    align-self: flex-start;
+  }
+
+  .tooltip-trigger {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .tooltip-trigger:hover {
+    background-color: var(--color-darker-blue);
+    transform: scale(1.05);
+  }
+
+  .tooltip-content {
+    width: 16rem;
+  }
+
+  .tooltip-inner {
+    padding: 0.8rem;
+  }
+
+  .tooltip-title {
+    font-size: 0.8rem;
+  }
+
+  .tooltip-description {
+    font-size: 0.8rem;
+  }
+
+  .tooltip-footer-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .tooltip-container {
+    margin-top: 1rem;
+    margin-left: 0;
+    align-self: center;
+  }
+
+  .tooltip-trigger {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .tooltip-trigger:hover {
+    background-color: var(--color-darker-blue);
+    transform: scale(1.05);
+  }
+
+  .tooltip-content {
+    width: 14rem;
+  }
+
+  .tooltip-inner {
+    padding: 0.75rem;
+  }
+
+  .tooltip-title {
+    font-size: 0.8rem;
+  }
+
+  .tooltip-description {
+    font-size: 0.8rem;
+  }
+
+  .tooltip-footer-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .tooltip-container {
+    margin-top: 0.75rem;
+    margin-left: 0;
+    align-self: center;
+  }
+
+  .tooltip-trigger {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .tooltip-trigger:hover {
+    background-color: var(--color-darker-blue);
+    transform: scale(1.05);
+  }
+
+  .tooltip-content {
+    width: 12rem;
+  }
+
+  .tooltip-inner {
+    padding: 0.6rem;
+  }
+
+  .tooltip-title {
+    font-size: 0.75rem;
+  }
+
+  .tooltip-description {
+    font-size: 0.75rem;
+  }
+
+  .tooltip-footer-text {
+    font-size: 0.65rem;
+  }
+}

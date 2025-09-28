@@ -19,17 +19,6 @@
   .bio__img {
     height: 380px;
   }
-  .tooltip-container {
-    margin-top: 25px;
-  }
-
-  .tooltip-content {
-    width: 15rem;
-  }
-
-  .tooltip-inner {
-    padding: 1rem;
-  }
 }
 
 @media (min-width: 800px) and (max-width: 1200px) {
@@ -97,23 +86,6 @@
 
   .contact {
     padding: 120px 0;
-  }
-  .tooltip-container {
-    margin-top: 20px;
-    margin-left: 0.8rem;
-  }
-
-  .tooltip-trigger {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.8rem;
-  }
-
-  .tooltip-content {
-    width: 14rem;
-  }
-
-  .tooltip-inner {
-    padding: 0.8rem;
   }
 }
 
@@ -279,23 +251,6 @@
     padding: 0.7rem 0.7rem;
   }
 
-  .tooltip-container {
-    margin-top: 15px;
-    margin-left: 0.5rem;
-  }
-
-  .tooltip-trigger {
-    padding: 0.5rem 1rem;
-    font-size: 0.75rem;
-  }
-
-  .tooltip-content {
-    width: 13rem;
-  }
-
-  .tooltip-inner {
-    padding: 0.75rem;
-  }
   .footer {
     font-size: 17px;
   }
